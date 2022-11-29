@@ -1,0 +1,224 @@
+
+@import "bootstrap.min.css";
+
+body {
+  background-color: #f9efe5;
+  color: #222;
+}
+
+body, p, li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, .title {
+  font-family: 'Karma', serif;
+  font-weight: 400;
+}
+
+.block-full {
+  min-height: 100vh;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.debug {
+  border: 1px solid #af0000;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 39px;
+  line-height: 1.25 !important;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.25 !important;
+}
+
+.lg {
+  font-size: 27px;
+  line-height: 33px;
+}
+
+.sm,
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+  font-size: 400;
+}
+
+a {
+  color: #222222;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid #222222;
+  &:focus,
+  &:hover {
+    color: #222222;
+    text-decoration: none;
+    border-bottom: 3px solid #222222;
+  }
+}
+
+.divider {
+  height: 50px;
+  width: 50px;
+  background: #dfd0c1;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.divider-sm {
+  height: 3px;
+  width: 50px;
+  background: #dfd0c1;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 27px;
+}
+
+.link-faded {
+  border-bottom: 0 !important;
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+.bordered-top {
+  // border-top: 3px solid #222222;
+}
+
+.link-main {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-main,
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
+  border: 2px solid #222222;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.compact {
+  line-height: 1 !important;
+}
+
+.container-outer {
+  padding: 45px 15px;
+}
+
+.container-outer.full {
+  min-height: 100vh;
+}
+
+.container-outer.first {
+  padding-top: 45px;
+  background: #fafafa;
+}
+
+.bg-grey {
+  // background: #fafafa;
+}
+
+.featured-box {
+  position: relative;
+  padding: 45px 30px 30px 45px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+}
+
+.featured-label {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  background: #666666;
+  color: #ffffff;
+  height: 26px;
+  line-height: 27px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.text-label {
+  letter-spacing: .1px;
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+ul {
+  padding-left: 5px;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+.bg-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-profile {
+  background-image: url(/images/alejandra-azuero-quijano.jpg);
+  min-height: 50vh;
+}
+.bg-nuremberg-001 {
+  background-image: url(/images/bg-nuremberg-001.jpg);
+}
+
+.bg-current-project {
+  background-image: url(/images/forensics-of-design.jpg);
+  min-height: 450px;
+}
+
+.bg-nuremberg-project {
+  background-image: url(/images/forensics-of-finance.jpg);
+  min-height: 450px;
+  background-position: top center;
+}
+
+@media (min-width: 767px) {
+
+  .container-outer {
+    padding: 120px 0;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .container-outer.first {
+    padding-top: 60px;
+  }
+
+}
