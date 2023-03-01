@@ -3,15 +3,15 @@ title: Home
 ---
 
 <div class="container-outer block-full d-flex justify-content-center align-items-center">
-  <div class="top-left text-md">
-    <a href="/" class="link-main link-main-md">EN</a> | <span class="link-main link-main-md disabled">ES</span>
-  </div>
   <a href="mailto:alejandrazuero@gmail.com" class="btn btn-main top-right">EMAIL</a>
+  <div class="top-left text-md text-bold">
+    <a href="/" class="link-main link-main-md <%= "disabled" if I18n.locale.to_s == "en" %>">EN</a><a href="/es" class="link-main link-main-md <%= "disabled" if I18n.locale.to_s == "es" %>">ES</a>
+  </div>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-7 text-center">
+      <div class="col-md-8 text-center">
         <div class="p-4">
-          <h1 class="mt-4 mb-4">Alejandra Azuero-Quijano es antropóloga, jurista y escritora.</h1>
+          <h1 class="mt-4 mb-4"><%= t(:hero_title) %></h1>
           <p class="js-header">
             <a href="#" data-target="#bio" class="js-scroll-to link-main">BIO</a>
             <a href="#" data-target="#publication-and-writing" class="js-scroll-to link-main">WRITING</a>
