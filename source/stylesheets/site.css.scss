@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5, .title {
     right: 20px;
 }
 
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 .debug {
   border: 1px solid #af0000;
 }
@@ -113,6 +119,15 @@ a {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.link-main-md {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.link-main.disabled {
+  color: #c6b09a;
 }
 
 .btn-main,
