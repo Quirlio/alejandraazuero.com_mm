@@ -85,9 +85,9 @@ a {
 }
 
 .divider {
-  height: 50px;
+  height: 3px;
   width: 50px;
-  background: #dfd0c1;
+  background: #666;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -164,6 +164,7 @@ a {
 
 .container-outer {
   padding: 45px 15px;
+  // border-bottom: 3px solid #dfd0c1;
 }
 
 .container-outer.full {
@@ -172,7 +173,12 @@ a {
 
 .container-outer.first {
   padding-top: 45px;
-  background: #fafafa;
+}
+
+.asterisk {
+  color: #dfd0c1;
+  font-size: 100px;
+  line-height: 80px;
 }
 
 .bg-grey {

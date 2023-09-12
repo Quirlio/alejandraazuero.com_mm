@@ -2,8 +2,8 @@
 title: Home
 ---
 
-<div class="container-outer block-full d-flex justify-content-center align-items-center">
-  <a href="mailto:alejandrazuero@gmail.com" class="btn btn-main top-right">EMAIL</a>
+<div class="container-outer first block-full d-flex justify-content-center align-items-center bg-white">
+  <a href="mailto:aazuero1@swarthmore.edu" class="btn btn-main top-right">EMAIL</a>
   <div class="top-left text-md text-bold">
     <a href="/" class="link-main-header <%= "disabled" if I18n.locale.to_s == "en" %>">EN</a><a href="/es" class="link-main-header <%= "disabled" if I18n.locale.to_s == "es" %>">ES</a>
   </div>
@@ -23,11 +23,11 @@ title: Home
     </div>
   </div>
 </div>
-<div id="bio" class="container-outer bg-grey bordered-top">
+<div id="bio" class="container-outer">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10">
-        <div class="section-header">
+        <div class="section-header mb-3">
           <div class="divider"></div>
           <h1 class="title-section"><%= t(:title_bio) %></h1>
         </div>
@@ -53,9 +53,9 @@ title: Home
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
-          <div class="section-header">
+          <div class="section-header mb-3">
             <div class="divider"></div>
-            <h1 class="title-section"><%= t(:title_writing) %></h1>
+            <h1 class="title-section mb-3"><%= t(:title_writing) %></h1>
           </div>
 
           <div class="bg-white p-4 mb-5">
@@ -79,7 +79,7 @@ title: Home
               </div>
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="row">
             <div class="col">
               <div class="block pe-3">
                 <div class="divider-sm"></div>
@@ -87,13 +87,13 @@ title: Home
                 <p class="mb-4"> <a href="https://polarjournal.org/2020/11/24/inventories-insurgent-wealth-and-settling-accounts-in-post-agreement-colombia/" target="_blank">“Inventories, Insurgent Wealth, and Settling Accounts in post-Agreement Colombia,”<em>Political and Legal Anthropology Review</em><span>&nbsp;(Online): Emergent Conversations.</span></a></p>
                 <p class="mb-4">“Making the ‘World Spectacle Trial’: Design as Forensic Practice at the Nuremberg Trials,”<em>Grey Room</em><span>, 82:__.</span></p>
                 <p class="mb-4">“Ambigüedad, Ficción e Ironía en el Museo Forense” [“Ambiguity, Fiction and Irony at the Forensic Museum.”] In<em>La Violencia y sus Sombras en Colombia y México</em><span>&nbsp;(M. Uribe and R. Parrini, eds.). Bogotá: Universidad del Rosario.</span></p>
-                <p class="mb-4 pb-5">“Del Contexto a las Finanzas Paramilitares: Trayectoria de una Técnica Forense en Justicia y Paz” [“Genealogy of Context Analysis as Forensic Technique in Colombia’s ‘Justicia y Paz’ Trials”]. In<em>Justicia y Paz desde Otros Lenguajes: Una Mirada Retrospectiva</em><span>&nbsp;(M. Acosta and J. Acosta, eds.). Bogotá: Universidad de la Sabana.</span></p>
+                <p class="mb-4">“Del Contexto a las Finanzas Paramilitares: Trayectoria de una Técnica Forense en Justicia y Paz” [“Genealogy of Context Analysis as Forensic Technique in Colombia’s ‘Justicia y Paz’ Trials”]. In<em>Justicia y Paz desde Otros Lenguajes: Una Mirada Retrospectiva</em><span>&nbsp;(M. Acosta and J. Acosta, eds.). Bogotá: Universidad de la Sabana.</span></p>
               </div>
             </div>
             <div class="col">
               <div class="block pe-3">
                 <div class="divider-sm"></div>
-                <h2 class="mb-4 mb-3">In Preparation</h2>
+                <h2 class="mb-4 mb-3"><%= t(:title_writing_preparation) %></h2>
 
                 <p class="mb-4"><span class="text-sm text-bold">(book manuscript)</span><br><span>Redesigning Crime: Remaking Criminal Liability at Nuremberg</span></p>
                 <p class="mb-4">“Guilty Objects: FARC Finances and the Legal Fictions of Political Transition.”</p>
@@ -113,7 +113,7 @@ title: Home
   </div>
 </div>
 <div id="research">
-  <div class="container-outer bg-grey">
+  <div class="container-outer">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10">
@@ -129,8 +129,8 @@ title: Home
             <div class="col-md-7 border-right-green">
               <div class="block ">
                 <div class="divider-sm"></div>
-                <h2 class="mb-4 mb-3"><%= t(:forensics_of_finance_title) %></h2>
-
+                <h2 class="mb-1"><%= t(:forensics_of_finance_title) %></h2>
+                <h3 class="mb-3 title"><%= t(:forensics_of_finance_sub_title) %></h3>
                 <p class="mb-0 pe-md-4"><%= t(:forensics_of_finance_copy) %></p>
               </div>
             </div>
@@ -146,7 +146,8 @@ title: Home
             <div class="col-md-7 border-left-green">
               <div class="block ps-md-4">
                 <div class="divider-sm"></div>
-                <h2 class="mb-4 mb-3"><%= t(:forensics_of_design_title) %></h2>
+                <h2 class="mb-1"><%= t(:forensics_of_design_title) %></h2>
+                <h3 class="mb-3 title"><%= t(:forensics_of_design_sub_title) %></h3>
                 <p class="mb-0"><%= t(:forensics_of_design_copy) %></p>
               </div>
             </div>
