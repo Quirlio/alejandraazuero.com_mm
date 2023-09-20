@@ -73,7 +73,9 @@ title: Home
                   <p class="mb-4 text-md"><%= t(:book_blurb_3) %></p>
                   <div class="">
                     <a href="<%= t(:buy_link_1) %>" class="d-inline-block mt-2 btn btn-main text-uppercase me-1" target="_blank"><%= t(:buy_copy_1) %></a>
-                    <a href="<%= t(:buy_link_2) %>" class="d-inline-block mt-2 btn btn-main text-uppercase" target="_blank"><%= t(:buy_copy_2) %></a>
+                    <% if t(:buy_link_2).present? %>
+                      <a href="<%= t(:buy_link_2) %>" class="d-inline-block mt-2 btn btn-main text-uppercase" target="_blank"><%= t(:buy_copy_2) %></a>
+                    <% end %>
                   </div>
                 </div>
               </div>
@@ -85,32 +87,32 @@ title: Home
                 <div class="divider-sm"></div>
                 <h2 class="mb-4 mb-3"><%= t(:title_writing_recent) %></h2>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2023. <em><u>El Paro como Teoría: Historia del
-                  presente y estallido en Colombia</u></em>. Barcelona: Herder.</p>
+                  <p class="mb-4">2023. <em><a href="https://herdereditorial.com/catalogo/filosofia/el-paro-como-teoria-9788425448232">El Paro como Teoría: Historia del
+                  presente y estallido en Colombia</a></em>. Barcelona: Herder.</p>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2023. <u>“A la izquierda del poder/Left of
-                  Power”</u> (with Emma Shaw Crane and Juan Pablo Vera).
+                  <p class="mb-4">2023. <a href="https://culanth.org/fieldsights/ocupar-la-historia">“Ocupar la historia/Occupying
+                  History”</a>, <em>Cultural Anthropology: Hotspots</em> (Online).</p>
+
+                  <p class="mb-4">2023. <a href="https://culanth.org/fieldsights/series/left-of-power">“A la izquierda del poder/Left of
+                  Power”</a> (with Emma Shaw Crane and Juan Pablo Vera).
                   <em>Cultural Anthropology: Hotspots</em> (Online).</p>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2023. <u>“Ocupar la historia/Occupying
-                  History”</u>, <em>Cultural Anthropology: Hotspots</em> (Online).</p>
-
-                  <p class="mb-4">Azuero-Quijano, Alejandra and María del Rosario Acosta López. 2023.
-                  <u>“Vivir sin miedo: hacia una política de la vida”</u>, <em>Filosofía & Co.</em>
+                  <p class="mb-4">2023.
+                  <a href="/downloads/filosofia-and-co-2023.pdf">“Vivir sin miedo: hacia una política de la vida”</a>, (with María del Rosario Acosta López) <em>Filosofía & Co.</em>
                   No 4.</p>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2021. <u>“Making the ‘World Spectacle Trial’:
-                  Design as Forensic Practice at the Nuremberg Trials,”</u> <em>Grey
+                  <p class="mb-4">2021. <a href="https://direct.mit.edu/grey/article-abstract/doi/10.1162/grey_a_00316/97318/Making-the-World-Spectacle-Trial-Design-as">“Making the ‘World Spectacle Trial’:
+                  Design as Forensic Practice at the Nuremberg Trials,”</a> <em>Grey
                   Room</em>, 82.</p>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2021. <u>“Ambigüedad, Ficción e Ironía en
-                  el Museo Forense”</u> [“Ambiguity, Fiction and Irony at the
+                  <p class="mb-4">2021. <a href="https://books.google.com/books?hl=en&lr=&id=HkcgEAAAQBAJ&oi=fnd&pg=PT6&dq=alejandra+azuero+quijano&ots=AZQBP8UC2I&sig=zcltRPuWIr2PkJIEW_X1DL3e4YQ#v=onepage&q=alejandra%20azuero%20quijano&f=false">“Ambigüedad, Ficción e Ironía en
+                  el Museo Forense”</a> [“Ambiguity, Fiction and Irony at the
                   Forensic Museum.”] In <em>La violencia y sus sombras en Colombia y
                   México</em> (M. Uribe and R. Parrini, eds.). Bogotá: Universidad del
                   Rosario.</p>
 
-                  <p class="mb-4">Azuero-Quijano, Alejandra. 2020. <u>“Inventories, Insurgent Wealth, and
-                  Settling Accounts in Post-Agreement Colombia,”</u> <em>Political and
+                  <p class="mb-4">2020. <a href="https://polarjournal.org/2020/11/24/inventories-insurgent-wealth-and-settling-accounts-in-post-agreement-colombia/">“Inventories, Insurgent Wealth, and
+                  Settling Accounts in Post-Agreement Colombia,”</a> <em>Political and
                   Legal Anthropology Review: Emergent Conversations</em> (Online).</p>
 
                   <a href="/downloads/other-publications-<%= t(:older_publications_link) %>.pdf" class="btn btn-main"><%= t(:older_publications_copy) %></a>
